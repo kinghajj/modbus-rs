@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `tcp` mod in crate `modbus`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, tcp">
+
+    <title>modbus::tcp - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../../main.css">
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'><a href='../index.html'>modbus</a></p><script>window.sidebarCurrent = {name: 'tcp', ty: 'mod', relpath: '../'};</script><script defer src="../sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content mod">
+<h1 class='fqn'><span class='in-band'>Module <a href='../index.html'>modbus</a>::<wbr><a class='mod' href=''>tcp</a></span><span class='out-of-band'><span id='render-detail'>
+            <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                [<span class='inner'>&#x2212;</span>]
+            </a>
+        </span><a id='src-13' class='srclink' href='../../src/modbus/tcp/mod.rs.html#1-380' title='goto source code'>[src]</a></span></h1>
+<div class='docblock'><p>The Modbus TCP backend implements a Modbus variant used for communication over TCP/IPv4 networks.</p>
+</div><h2 id='structs' class='section-header'><a href="#structs">Structs</a></h2>
+<table>
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.Ctx.html'
+                               title='modbus::tcp::Ctx'>Ctx</a></td>
+                        <td class='docblock short'>
+                             <p>Context object which holds state for all modbus operations.</p>
+
+                        </td>
+                    </tr>
+                </table><h2 id='functions' class='section-header'><a href="#functions">Functions</a></h2>
+<table>
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.read_coils.html'
+                               title='modbus::tcp::read_coils'>read_coils</a></td>
+                        <td class='docblock short'>
+                             <p>Read <code>count</code> bits starting at address <code>addr</code>.</p>
+
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.read_discrete_inputs.html'
+                               title='modbus::tcp::read_discrete_inputs'>read_discrete_inputs</a></td>
+                        <td class='docblock short'>
+                             <p>Read <code>count</code> input bits starting at address <code>addr</code>.</p>
+
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.read_holding_registers.html'
+                               title='modbus::tcp::read_holding_registers'>read_holding_registers</a></td>
+                        <td class='docblock short'>
+                             <p>Read <code>count</code> 16bit registers starting at address <code>addr</code>.</p>
+
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.read_input_registers.html'
+                               title='modbus::tcp::read_input_registers'>read_input_registers</a></td>
+                        <td class='docblock short'>
+                             <p>Read <code>count</code> 16bit input registers starting at address <code>addr</code>.</p>
+
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.write_multiple_coils.html'
+                               title='modbus::tcp::write_multiple_coils'>write_multiple_coils</a></td>
+                        <td class='docblock short'>
+                             <p>Write a multiple coils (bits) starting at address <code>addr</code>.</p>
+
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.write_multiple_registers.html'
+                               title='modbus::tcp::write_multiple_registers'>write_multiple_registers</a></td>
+                        <td class='docblock short'>
+                             <p>Write a multiple 16bit registers starting at address <code>addr</code>.</p>
+
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.write_single_coil.html'
+                               title='modbus::tcp::write_single_coil'>write_single_coil</a></td>
+                        <td class='docblock short'>
+                             <p>Write a single coil (bit) to address <code>addr</code>.</p>
+
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.write_single_register.html'
+                               title='modbus::tcp::write_single_register'>write_single_register</a></td>
+                        <td class='docblock short'>
+                             <p>Write a single 16bit register to address <code>addr</code>.</p>
+
+                        </td>
+                    </tr>
+                </table></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../../";
+        window.currentCrate = "modbus";
+        window.playgroundUrl = "";
+    </script>
+    <script src="../../jquery.js"></script>
+    <script src="../../main.js"></script>
+    
+    <script async src="../../search-index.js"></script>
+</body>
+</html>
